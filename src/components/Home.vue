@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="banner">
-      <img class="logo"/>
+      <img class="logo" src=".././assets/logo.png"/>
       <label class="title">优能EnableU组织及人才发展</label>
     </div>
     <div class="menu">
@@ -15,10 +15,22 @@
       <img class="cover-image" src=".././assets/cover.jpg"/>
     </div>
     <div class="selections">
-      <img class="selection"/>
-      <img class="selection"/>
-      <img class="selection"/>
-      <img class="selection"/>
+      <div class="selection-container">
+        <img class="selection" src=".././assets/1.png"/>
+        <label class="selection-text">优能介绍</label>
+      </div>
+      <div class="selection-container">
+        <img class="selection" src=".././assets/2.png"/>
+        <label class="selection-text">专家介绍</label>
+      </div>
+      <div class="selection-container">
+        <img class="selection" src=".././assets/3.png"/>
+        <label class="selection-text">好友专享</label>
+      </div>
+      <div class="selection-container">
+        <img class="selection" src=".././assets/4.png"/>
+        <label class="selection-text">合作联系</label>
+      </div>
     </div>
 
     <div class="article">
@@ -128,6 +140,17 @@ export default {
   display: flex;
   align-self: center;
   justify-content: space-between;
+}
+
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selection-text {
+  margin-top: 0.125rem;
+  font-size: 0.25rem;
 }
 
 .selection {
